@@ -1,5 +1,15 @@
 # jQuery Mobile [![Build Status](https://travis-ci.org/jquery/jquery-mobile.svg?branch=master)](https://travis-ci.org/jquery/jquery-mobile) [![Coverage Status](http://img.shields.io/coveralls/jquery/jquery-mobile/master.svg)](https://coveralls.io/r/jquery/jquery-mobile?branch=master)
 
+## JQuery Mobile Revival in 2020
+JQM is still relevant and an excellent, fully functional, terribly easy to use mobile framework. I've just recently completed a mobile business application for SAP B1, and JQM worked brilliantly. 
+I've just installed grunt, upgraded the JQuery dependency to 3.5.1 and the project compiled and tested fine.
+The JQM API [documentation about events](https://api.jquerymobile.com/pagebeforeshow/) writes that "The triggering of this event is deprecated as of jQuery Mobile 1.4.0. It will no longer be triggered in 1.6.0.
+The replacement for pagebeforeshow is the pagecontainer widget's pagecontainerbeforeshow event. In jQuery Mobile 1.4.0, the two events are identical except for their name and the fact that pagecontainerbeforeshow is triggered on the pagecontainer, whereas pagebeforeshow is triggered on the page."
+Actually, I found only two references to the event pagecontainerbeforeshow, both of them simply lists them as valid events. On the other hand, I found tons of references to pagebeforeshow. So, my conclusion is that 1.5.0-pre compiles fine with JQ 3.5.1 and the so-called deprecated pagexxx events are all supported.
+As of the curret status of JQM, it is highly unlikely that we have 1.6 any soon.
+
+## Introduction and Motivation
+
 jQuery Mobile is a unified, HTML5-based user interface system for all popular mobile device platforms, built on the rock-solid jQuery and jQuery UI foundation. Its lightweight code is built with progressive enhancement, and has a flexible, easily themeable design.
 
 jQuery Mobile 1.4.x works with versions of jQuery core from 1.8.3 to 1.11.1 / 2.1.1. You can find more information about how the library works, and what it is capable of, by reading the [documentation](http://api.jquerymobile.com) and exploring the [demos](http://demos.jquerymobile.com/). Alternatively, more information can also be found on the [jquerymobile site](http://jquerymobile.com).
